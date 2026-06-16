@@ -1,0 +1,5 @@
+# Step 5 only: transformer robustness (DeBERTa-v3-base)
+# Install after core deps: pip install -r requirements.txt -r requirements-transformer.txt
+-r requirements.txt
+torch>=2.0.0,<3
+transformers>=4.36.0,<5

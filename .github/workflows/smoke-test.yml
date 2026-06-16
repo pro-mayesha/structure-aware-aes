@@ -1,0 +1,43 @@
+name: smoke-test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install core dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Compile scripts
+        run: python -m compileall scripts
+
+      - name: Run smoke check
+        run: python scripts/smoke_check.py
+
+      - name: Verify no raw PERSUADE files tracked
+        run: |
+          if git ls-files 'data/persuade_corpus_2.0_*.csv' 'data/persuade20/raw/*.csv' | grep -q .; then
+            echo "ERROR: Raw PERSUADE CSV files must not be tracked in git."
+            git ls-files 'data/persuade_corpus_2.0_*.csv' 'data/persuade20/raw/*.csv'
+            exit 1
+          fi
+          echo "No raw dataset files in git index."

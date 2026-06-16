@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: "Do Document Boundaries and Rhetorical Transitions Matter for Holistic Essay Scoring?"
+message: "If you use this software or reproduce these experiments, please cite the accompanying paper."
+type: software
+authors:
+  - family-names: Proma
+    given-names: Mayesha Maliha
+  - family-names: Maliha
+    given-names: Payal Jannat
+  - family-names: Peiris
+    given-names: Luvini Hasara Pasandi
+  - family-names: Kulkarni
+    given-names: Parag
+repository-code: "https://github.com/pro-mayesha/structure-aware-aes"
+url: "https://github.com/pro-mayesha/structure-aware-aes"
+license: MIT
+year: 2026
+keywords:
+  - automated essay scoring
+  - discourse structure
+  - PERSUADE 2.0
+  - document engineering
+preferred-citation:
+  type: conference-paper
+  title: "Do Document Boundaries and Rhetorical Transitions Matter for Holistic Essay Scoring?"
+  authors:
+    - family-names: Proma
+      given-names: Mayesha Maliha
+    - family-names: Maliha
+      given-names: Payal Jannat
+    - family-names: Peiris
+      given-names: Luvini Hasara Pasandi
+    - family-names: Kulkarni
+      given-names: Parag
+  year: 2026
+  conference:
+    name: "TBD (DocEng / NLP-for-education submission)"

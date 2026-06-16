@@ -1,0 +1,6 @@
+# Core pipeline (Steps 1–4): audit, feasibility, stress tests, verification, held-out evaluation
+numpy>=1.26.0,<3
+pandas>=2.1.0,<3
+scikit-learn>=1.4.0,<2
+scipy>=1.11.0,<2
+PyYAML>=6.0.1,<7
