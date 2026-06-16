@@ -1,0 +1,49 @@
+{
+  "condition": "D_RANDOM",
+  "seed": 101,
+  "training_mode": "frozen_encoder_head",
+  "best_epoch": 5,
+  "runtime_seconds": 1.0,
+  "total_parameters": 183839809,
+  "trainable_parameters": 8257,
+  "encoder_parameters": 183831552,
+  "head_parameters": 8257,
+  "encoder_trainable": 0,
+  "qwk": 0.0065123926019208245,
+  "rmse": 2.0633446091121446,
+  "mae": 1.7345877885818481,
+  "exact_accuracy": 0.15421609490221225,
+  "adjacent_accuracy": 0.47098428983648605,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 12.912362896666234,
+      "val_mse": 11.724228858947754,
+      "val_qwk": 0.0
+    },
+    {
+      "epoch": 2,
+      "train_mse": 10.559924962569257,
+      "val_mse": 9.500008583068848,
+      "val_qwk": 0.00025310416560431204
+    },
+    {
+      "epoch": 3,
+      "train_mse": 8.484042391485097,
+      "val_mse": 7.5649824142456055,
+      "val_qwk": 0.002905534665513243
+    },
+    {
+      "epoch": 4,
+      "train_mse": 6.7103323157952754,
+      "val_mse": 5.916837215423584,
+      "val_qwk": 0.019709342022424914
+    },
+    {
+      "epoch": 5,
+      "train_mse": 5.229317674831468,
+      "val_mse": 4.554047107696533,
+      "val_qwk": 0.0065123926019208245
+    }
+  ]
+}

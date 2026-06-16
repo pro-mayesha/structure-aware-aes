@@ -1,0 +1,90 @@
+prompt_name,holistic_essay_score,essay_count
+"""A Cowboy Who Rode the Waves""",1.0,141
+"""A Cowboy Who Rode the Waves""",2.0,644
+"""A Cowboy Who Rode the Waves""",3.0,470
+"""A Cowboy Who Rode the Waves""",4.0,107
+"""A Cowboy Who Rode the Waves""",5.0,10
+Car-free cities,1.0,139
+Car-free cities,2.0,412
+Car-free cities,3.0,701
+Car-free cities,4.0,539
+Car-free cities,5.0,160
+Car-free cities,6.0,8
+Cell phones at school,1.0,10
+Cell phones at school,2.0,432
+Cell phones at school,3.0,783
+Cell phones at school,4.0,342
+Cell phones at school,5.0,84
+Cell phones at school,6.0,5
+Community service,1.0,17
+Community service,2.0,533
+Community service,3.0,613
+Community service,4.0,304
+Community service,5.0,73
+Community service,6.0,2
+Distance learning,1.0,9
+Distance learning,2.0,91
+Distance learning,3.0,386
+Distance learning,4.0,657
+Distance learning,5.0,678
+Distance learning,6.0,336
+Does the electoral college work?,1.0,191
+Does the electoral college work?,2.0,513
+Does the electoral college work?,3.0,674
+Does the electoral college work?,4.0,466
+Does the electoral college work?,5.0,170
+Does the electoral college work?,6.0,32
+Driverless cars,1.0,36
+Driverless cars,2.0,433
+Driverless cars,3.0,776
+Driverless cars,4.0,489
+Driverless cars,5.0,148
+Driverless cars,6.0,4
+Exploring Venus,1.0,198
+Exploring Venus,2.0,549
+Exploring Venus,3.0,573
+Exploring Venus,4.0,387
+Exploring Venus,5.0,124
+Exploring Venus,6.0,31
+Facial action coding system,1.0,175
+Facial action coding system,2.0,678
+Facial action coding system,3.0,792
+Facial action coding system,4.0,334
+Facial action coding system,5.0,139
+Facial action coding system,6.0,49
+Grades for extracurricular activities,1.0,30
+Grades for extracurricular activities,2.0,547
+Grades for extracurricular activities,3.0,641
+Grades for extracurricular activities,4.0,354
+Grades for extracurricular activities,5.0,52
+Grades for extracurricular activities,6.0,2
+Mandatory extracurricular activities,1.0,6
+Mandatory extracurricular activities,2.0,163
+Mandatory extracurricular activities,3.0,401
+Mandatory extracurricular activities,4.0,664
+Mandatory extracurricular activities,5.0,371
+Mandatory extracurricular activities,6.0,65
+Phones and driving,1.0,1
+Phones and driving,2.0,54
+Phones and driving,3.0,350
+Phones and driving,4.0,505
+Phones and driving,5.0,225
+Phones and driving,6.0,31
+Seeking multiple opinions,1.0,3
+Seeking multiple opinions,2.0,119
+Seeking multiple opinions,3.0,367
+Seeking multiple opinions,4.0,727
+Seeking multiple opinions,5.0,300
+Seeking multiple opinions,6.0,36
+Summer projects,1.0,6
+Summer projects,2.0,47
+Summer projects,3.0,218
+Summer projects,4.0,549
+Summer projects,5.0,675
+Summer projects,6.0,255
+The Face on Mars,1.0,66
+The Face on Mars,2.0,484
+The Face on Mars,3.0,623
+The Face on Mars,4.0,305
+The Face on Mars,5.0,88
+The Face on Mars,6.0,17

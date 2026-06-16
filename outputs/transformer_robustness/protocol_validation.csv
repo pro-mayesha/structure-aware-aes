@@ -1,0 +1,13 @@
+check,passed,detail
+training_mode,True,frozen_encoder_head
+no_train_test_overlap,True,"train=15591, test=10401"
+numeric_scaler_fit_train_only,True,StandardScaler fit on official-train only in full-train phase
+identical_test_order,True,"10401 essays, fixed ordering"
+identical_transformer_settings,True,"{""max_epochs"": 5, ""early_stopping_patience"": 2, ""learning_rate"": 2e-05, ""weight_decay"": 0.01, ""batch_size"": 16, ""max_batch_size"": 16, ""gradient_accumulation_steps"": 1, ""max_grad_norm"": 1.0, ""mixed_precision"": true, ""num_workers"": 0, ""warmup_ratio"": 0.1}"
+structural_manifest_match,False,"{'D0': True, 'D2': True, 'D_STRUCT': False, 'D_POS': True, 'D_SHUFFLED': True, 'D_RANDOM': True}"
+random_control_dim_match,True,struct_inc=91
+shuffled_control_validated,True,n=400
+parameter_counts_logged,True,18 runs
+training_logs_saved,True,18
+seeds_completed,True,"completed=[13, 42, 101], requested=[42, 13, 101], single_seed=False"
+no_post_test_changes,True,Frozen protocol; no changes after test evaluation

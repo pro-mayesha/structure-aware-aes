@@ -1,0 +1,346 @@
+condition,prompt_name,n_essays,qwk
+T2,"""A Cowboy Who Rode the Waves""",127,0.7187361582755056
+T2,Car-free cities,190,0.779131181926158
+T2,Cell phones at school,152,0.7234177215189874
+T2,Community service,142,0.6192856493683541
+T2,Distance learning,288,0.8426284398869939
+T2,Does the electoral college work?,356,0.778009254338414
+T2,Driverless cars,295,0.6912658714890343
+T2,Exploring Venus,196,0.8096566149555516
+T2,Facial action coding system,220,0.7622242098986285
+T2,Grades for extracurricular activities,175,0.7622017776391704
+T2,Mandatory extracurricular activities,177,0.797366914710933
+T2,Phones and driving,138,0.7628226730471119
+T2,Seeking multiple opinions,331,0.7552736766710566
+T2,Summer projects,172,0.6707383773928897
+T2,The Face on Mars,160,0.7598515445912017
+T3,"""A Cowboy Who Rode the Waves""",127,0.7635686667621366
+T3,Car-free cities,190,0.8166814777199441
+T3,Cell phones at school,152,0.7313854853911403
+T3,Community service,142,0.6494788809654416
+T3,Distance learning,288,0.8606213266162889
+T3,Does the electoral college work?,356,0.7733500263199078
+T3,Driverless cars,295,0.6941361698859491
+T3,Exploring Venus,196,0.7979728568974402
+T3,Facial action coding system,220,0.7923940737944701
+T3,Grades for extracurricular activities,175,0.7446173188747446
+T3,Mandatory extracurricular activities,177,0.8111479028697571
+T3,Phones and driving,138,0.8006182380216383
+T3,Seeking multiple opinions,331,0.7653238801160167
+T3,Summer projects,172,0.6751214247166757
+T3,The Face on Mars,160,0.7807017543859649
+POS,"""A Cowboy Who Rode the Waves""",127,0.7313689802744847
+POS,Car-free cities,190,0.8194852306097772
+POS,Cell phones at school,152,0.7320799059929495
+POS,Community service,142,0.7151028771450525
+POS,Distance learning,288,0.8490245971162002
+POS,Does the electoral college work?,356,0.7735180009177756
+POS,Driverless cars,295,0.7149328099048771
+POS,Exploring Venus,196,0.8244365361803084
+POS,Facial action coding system,220,0.7979084228377615
+POS,Grades for extracurricular activities,175,0.7553440966898168
+POS,Mandatory extracurricular activities,177,0.8159176747495758
+POS,Phones and driving,138,0.8235525539308898
+POS,Seeking multiple opinions,331,0.7425081565594993
+POS,Summer projects,172,0.686188651705893
+POS,The Face on Mars,160,0.8033115905669844
+FIRSTLAST,"""A Cowboy Who Rode the Waves""",127,0.7213146730384747
+FIRSTLAST,Car-free cities,190,0.8004353218091165
+FIRSTLAST,Cell phones at school,152,0.7281399046104928
+FIRSTLAST,Community service,142,0.6275195582144499
+FIRSTLAST,Distance learning,288,0.8464907706747316
+FIRSTLAST,Does the electoral college work?,356,0.7778871110350531
+FIRSTLAST,Driverless cars,295,0.687903539478802
+FIRSTLAST,Exploring Venus,196,0.7950617283950617
+FIRSTLAST,Facial action coding system,220,0.761904761904762
+FIRSTLAST,Grades for extracurricular activities,175,0.7475885693680699
+FIRSTLAST,Mandatory extracurricular activities,177,0.7920172845121674
+FIRSTLAST,Phones and driving,138,0.7699843526770529
+FIRSTLAST,Seeking multiple opinions,331,0.7524249830678171
+FIRSTLAST,Summer projects,172,0.6561580882352941
+FIRSTLAST,The Face on Mars,160,0.7619305269992425
+TRANS,"""A Cowboy Who Rode the Waves""",127,0.7457820989419502
+TRANS,Car-free cities,190,0.7949622933753142
+TRANS,Cell phones at school,152,0.7307086614173228
+TRANS,Community service,142,0.640589047399908
+TRANS,Distance learning,288,0.8477923689380622
+TRANS,Does the electoral college work?,356,0.7745619400568489
+TRANS,Driverless cars,295,0.68741415172089
+TRANS,Exploring Venus,196,0.7952289744036218
+TRANS,Facial action coding system,220,0.7879109225874867
+TRANS,Grades for extracurricular activities,175,0.7377026842894128
+TRANS,Mandatory extracurricular activities,177,0.7931667686828779
+TRANS,Phones and driving,138,0.761847869374751
+TRANS,Seeking multiple opinions,331,0.7608620314950455
+TRANS,Summer projects,172,0.6681367144432194
+TRANS,The Face on Mars,160,0.7679080071737525
+LABELPOS,"""A Cowboy Who Rode the Waves""",127,0.7637209302325582
+LABELPOS,Car-free cities,190,0.7961932796168334
+LABELPOS,Cell phones at school,152,0.6840855106888362
+LABELPOS,Community service,142,0.5890675241157557
+LABELPOS,Distance learning,288,0.825372811757078
+LABELPOS,Does the electoral college work?,356,0.727320726093714
+LABELPOS,Driverless cars,295,0.6884995026398347
+LABELPOS,Exploring Venus,196,0.7392692444129123
+LABELPOS,Facial action coding system,220,0.7279340446168768
+LABELPOS,Grades for extracurricular activities,175,0.684025468022427
+LABELPOS,Mandatory extracurricular activities,177,0.7845978322875071
+LABELPOS,Phones and driving,138,0.7711734693877551
+LABELPOS,Seeking multiple opinions,331,0.7319550797299068
+LABELPOS,Summer projects,172,0.6679061784897025
+LABELPOS,The Face on Mars,160,0.755443526761772
+NO_TRANS,"""A Cowboy Who Rode the Waves""",127,0.7402615933412604
+NO_TRANS,Car-free cities,190,0.7945842657078923
+NO_TRANS,Cell phones at school,152,0.687593423019432
+NO_TRANS,Community service,142,0.5967036036874942
+NO_TRANS,Distance learning,288,0.8235866392822397
+NO_TRANS,Does the electoral college work?,356,0.7241487736950858
+NO_TRANS,Driverless cars,295,0.6930140026015763
+NO_TRANS,Exploring Venus,196,0.7373916121040525
+NO_TRANS,Facial action coding system,220,0.7225994180407371
+NO_TRANS,Grades for extracurricular activities,175,0.678293660146123
+NO_TRANS,Mandatory extracurricular activities,177,0.7868814861533169
+NO_TRANS,Phones and driving,138,0.7728944820909971
+NO_TRANS,Seeking multiple opinions,331,0.7355094933689533
+NO_TRANS,Summer projects,172,0.6639344262295082
+NO_TRANS,The Face on Mars,160,0.7510101561646828
+NO_POS,"""A Cowboy Who Rode the Waves""",127,0.743483697220352
+NO_POS,Car-free cities,190,0.8106662630237897
+NO_POS,Cell phones at school,152,0.7267041901188243
+NO_POS,Community service,142,0.6582278481012658
+NO_POS,Distance learning,288,0.8494000827472072
+NO_POS,Does the electoral college work?,356,0.772774600276704
+NO_POS,Driverless cars,295,0.6883193112893758
+NO_POS,Exploring Venus,196,0.7972064148991205
+NO_POS,Facial action coding system,220,0.7924627435995415
+NO_POS,Grades for extracurricular activities,175,0.7476568132660417
+NO_POS,Mandatory extracurricular activities,177,0.7931667686828779
+NO_POS,Phones and driving,138,0.7688906752411575
+NO_POS,Seeking multiple opinions,331,0.7530815956804376
+NO_POS,Summer projects,172,0.6640625
+NO_POS,The Face on Mars,160,0.7679080071737525
+RND_s13,"""A Cowboy Who Rode the Waves""",127,0.728816849461322
+RND_s13,Car-free cities,190,0.7667501961677677
+RND_s13,Cell phones at school,152,0.7047256581033936
+RND_s13,Community service,142,0.641025641025641
+RND_s13,Distance learning,288,0.8347590235760484
+RND_s13,Does the electoral college work?,356,0.7731510167295668
+RND_s13,Driverless cars,295,0.6941813788534237
+RND_s13,Exploring Venus,196,0.7920193470374849
+RND_s13,Facial action coding system,220,0.7699416342412452
+RND_s13,Grades for extracurricular activities,175,0.7374880676394382
+RND_s13,Mandatory extracurricular activities,177,0.7952810548230396
+RND_s13,Phones and driving,138,0.7611503128744508
+RND_s13,Seeking multiple opinions,331,0.7453727446501002
+RND_s13,Summer projects,172,0.6520779698418536
+RND_s13,The Face on Mars,160,0.7598515445912017
+RB_s13,"""A Cowboy Who Rode the Waves""",127,0.7393192992505608
+RB_s13,Car-free cities,190,0.7822472985567115
+RB_s13,Cell phones at school,152,0.6843450479233226
+RB_s13,Community service,142,0.645900778720798
+RB_s13,Distance learning,288,0.8388369678089305
+RB_s13,Does the electoral college work?,356,0.7665849778580335
+RB_s13,Driverless cars,295,0.6910036078674787
+RB_s13,Exploring Venus,196,0.8077190542420027
+RB_s13,Facial action coding system,220,0.7917066155321189
+RB_s13,Grades for extracurricular activities,175,0.7406106765785693
+RB_s13,Mandatory extracurricular activities,177,0.7778562183786328
+RB_s13,Phones and driving,138,0.7574036511156186
+RB_s13,Seeking multiple opinions,331,0.761841250899391
+RB_s13,Summer projects,172,0.6612640347700108
+RB_s13,The Face on Mars,160,0.7632617273125822
+TS_s13,"""A Cowboy Who Rode the Waves""",127,0.743483697220352
+TS_s13,Car-free cities,190,0.7917341371664881
+TS_s13,Cell phones at school,152,0.7032196365954734
+TS_s13,Community service,142,0.616555998229305
+TS_s13,Distance learning,288,0.829556135770235
+TS_s13,Does the electoral college work?,356,0.7615963866150876
+TS_s13,Driverless cars,295,0.7079777076269536
+TS_s13,Exploring Venus,196,0.7910076417273858
+TS_s13,Facial action coding system,220,0.7815809379727685
+TS_s13,Grades for extracurricular activities,175,0.7455817545772567
+TS_s13,Mandatory extracurricular activities,177,0.7959889349930844
+TS_s13,Phones and driving,138,0.7390005972526379
+TS_s13,Seeking multiple opinions,331,0.7612070735212176
+TS_s13,Summer projects,172,0.6766016713091922
+TS_s13,The Face on Mars,160,0.7607859888936352
+RND_s21,"""A Cowboy Who Rode the Waves""",127,0.717819582284106
+RND_s21,Car-free cities,190,0.7708402102429982
+RND_s21,Cell phones at school,152,0.7354430379746836
+RND_s21,Community service,142,0.6269468943516607
+RND_s21,Distance learning,288,0.8349299926308033
+RND_s21,Does the electoral college work?,356,0.7665013999478105
+RND_s21,Driverless cars,295,0.6906435701246747
+RND_s21,Exploring Venus,196,0.8038872351602171
+RND_s21,Facial action coding system,220,0.7756628144119646
+RND_s21,Grades for extracurricular activities,175,0.7524752475247525
+RND_s21,Mandatory extracurricular activities,177,0.779387707408273
+RND_s21,Phones and driving,138,0.7721237446923233
+RND_s21,Seeking multiple opinions,331,0.7531371341983142
+RND_s21,Summer projects,172,0.6757999264435455
+RND_s21,The Face on Mars,160,0.743419597434196
+RB_s21,"""A Cowboy Who Rode the Waves""",127,0.733700687570098
+RB_s21,Car-free cities,190,0.7852916529114502
+RB_s21,Cell phones at school,152,0.7320589157004074
+RB_s21,Community service,142,0.5985100080782695
+RB_s21,Distance learning,288,0.8415024249303478
+RB_s21,Does the electoral college work?,356,0.7753815833315609
+RB_s21,Driverless cars,295,0.6951620479098168
+RB_s21,Exploring Venus,196,0.8136928734022063
+RB_s21,Facial action coding system,220,0.78
+RB_s21,Grades for extracurricular activities,175,0.7590816235900169
+RB_s21,Mandatory extracurricular activities,177,0.7854049997113332
+RB_s21,Phones and driving,138,0.7645372645372646
+RB_s21,Seeking multiple opinions,331,0.7498372168736338
+RB_s21,Summer projects,172,0.6821500273772587
+RB_s21,The Face on Mars,160,0.7382255122840897
+TS_s21,"""A Cowboy Who Rode the Waves""",127,0.7353414795870039
+TS_s21,Car-free cities,190,0.7859867393697361
+TS_s21,Cell phones at school,152,0.7320589157004074
+TS_s21,Community service,142,0.6282051282051282
+TS_s21,Distance learning,288,0.843675293628521
+TS_s21,Does the electoral college work?,356,0.771467888606733
+TS_s21,Driverless cars,295,0.7052399209945392
+TS_s21,Exploring Venus,196,0.795997191011236
+TS_s21,Facial action coding system,220,0.7728364230141197
+TS_s21,Grades for extracurricular activities,175,0.7642317265316374
+TS_s21,Mandatory extracurricular activities,177,0.8067321811815205
+TS_s21,Phones and driving,138,0.774885145482389
+TS_s21,Seeking multiple opinions,331,0.7613224036780867
+TS_s21,Summer projects,172,0.6720796698367127
+TS_s21,The Face on Mars,160,0.7478260869565218
+RND_s42,"""A Cowboy Who Rode the Waves""",127,0.7193370165745856
+RND_s42,Car-free cities,190,0.7695424398048982
+RND_s42,Cell phones at school,152,0.718865598027127
+RND_s42,Community service,142,0.6051167964404894
+RND_s42,Distance learning,288,0.8406570841889116
+RND_s42,Does the electoral college work?,356,0.7681377795302202
+RND_s42,Driverless cars,295,0.680365296803653
+RND_s42,Exploring Venus,196,0.8136237897648686
+RND_s42,Facial action coding system,220,0.7840732842186894
+RND_s42,Grades for extracurricular activities,175,0.7633002705139765
+RND_s42,Mandatory extracurricular activities,177,0.7793567688855647
+RND_s42,Phones and driving,138,0.7668288726682887
+RND_s42,Seeking multiple opinions,331,0.752132451880887
+RND_s42,Summer projects,172,0.6572752548656162
+RND_s42,The Face on Mars,160,0.7412447022083426
+RB_s42,"""A Cowboy Who Rode the Waves""",127,0.728051391862955
+RB_s42,Car-free cities,190,0.784270683521308
+RB_s42,Cell phones at school,152,0.708626198083067
+RB_s42,Community service,142,0.6370078033904386
+RB_s42,Distance learning,288,0.8445465942331801
+RB_s42,Does the electoral college work?,356,0.7707742806951239
+RB_s42,Driverless cars,295,0.6916973098509773
+RB_s42,Exploring Venus,196,0.7951101928374655
+RB_s42,Facial action coding system,220,0.7764446620959843
+RB_s42,Grades for extracurricular activities,175,0.7296806142383354
+RB_s42,Mandatory extracurricular activities,177,0.7913053400273847
+RB_s42,Phones and driving,138,0.7627267210572449
+RB_s42,Seeking multiple opinions,331,0.7520999204968372
+RB_s42,Summer projects,172,0.6548075168764824
+RB_s42,The Face on Mars,160,0.7618789912328174
+TS_s42,"""A Cowboy Who Rode the Waves""",127,0.7499879963508906
+TS_s42,Car-free cities,190,0.8216476006908808
+TS_s42,Cell phones at school,152,0.7174944637772857
+TS_s42,Community service,142,0.6241363840287124
+TS_s42,Distance learning,288,0.8377521918242316
+TS_s42,Does the electoral college work?,356,0.7715937533048965
+TS_s42,Driverless cars,295,0.7004844022476264
+TS_s42,Exploring Venus,196,0.8009363620599965
+TS_s42,Facial action coding system,220,0.7913109466894328
+TS_s42,Grades for extracurricular activities,175,0.7505825396466302
+TS_s42,Mandatory extracurricular activities,177,0.8000677736360555
+TS_s42,Phones and driving,138,0.7472184531886024
+TS_s42,Seeking multiple opinions,331,0.7489069946551314
+TS_s42,Summer projects,172,0.7025157232704403
+TS_s42,The Face on Mars,160,0.7522426313541222
+RND_s87,"""A Cowboy Who Rode the Waves""",127,0.6928038701874621
+RND_s87,Car-free cities,190,0.7815429712177495
+RND_s87,Cell phones at school,152,0.722756907792611
+RND_s87,Community service,142,0.6051167964404894
+RND_s87,Distance learning,288,0.8356164383561644
+RND_s87,Does the electoral college work?,356,0.7737531776239097
+RND_s87,Driverless cars,295,0.6843705499749837
+RND_s87,Exploring Venus,196,0.8029184549356223
+RND_s87,Facial action coding system,220,0.7693408328399447
+RND_s87,Grades for extracurricular activities,175,0.7376311844077961
+RND_s87,Mandatory extracurricular activities,177,0.8037435868523426
+RND_s87,Phones and driving,138,0.7781350482315113
+RND_s87,Seeking multiple opinions,331,0.7329906437500369
+RND_s87,Summer projects,172,0.6615092290988056
+RND_s87,The Face on Mars,160,0.7446163835082784
+RB_s87,"""A Cowboy Who Rode the Waves""",127,0.733700687570098
+RB_s87,Car-free cities,190,0.7793263646922184
+RB_s87,Cell phones at school,152,0.7093690248565965
+RB_s87,Community service,142,0.6185624305298258
+RB_s87,Distance learning,288,0.8431536135154865
+RB_s87,Does the electoral college work?,356,0.7763866979778584
+RB_s87,Driverless cars,295,0.6998096865654251
+RB_s87,Exploring Venus,196,0.8008227631127871
+RB_s87,Facial action coding system,220,0.7690191156593937
+RB_s87,Grades for extracurricular activities,175,0.7259385207391829
+RB_s87,Mandatory extracurricular activities,177,0.7922415286035907
+RB_s87,Phones and driving,138,0.7742237061769616
+RB_s87,Seeking multiple opinions,331,0.7553413766812751
+RB_s87,Summer projects,172,0.6451882069349155
+RB_s87,The Face on Mars,160,0.7778727039726613
+TS_s87,"""A Cowboy Who Rode the Waves""",127,0.7236399604352126
+TS_s87,Car-free cities,190,0.7946181041279854
+TS_s87,Cell phones at school,152,0.728739913097455
+TS_s87,Community service,142,0.6498767171539275
+TS_s87,Distance learning,288,0.8455376399301633
+TS_s87,Does the electoral college work?,356,0.7666100368681137
+TS_s87,Driverless cars,295,0.708439502741101
+TS_s87,Exploring Venus,196,0.8046848088184636
+TS_s87,Facial action coding system,220,0.782660445629404
+TS_s87,Grades for extracurricular activities,175,0.7602685890094096
+TS_s87,Mandatory extracurricular activities,177,0.7950338857565921
+TS_s87,Phones and driving,138,0.7671541057367829
+TS_s87,Seeking multiple opinions,331,0.7552736766710566
+TS_s87,Summer projects,172,0.6649972175848637
+TS_s87,The Face on Mars,160,0.7778252510147404
+RND_s101,"""A Cowboy Who Rode the Waves""",127,0.7187361582755056
+RND_s101,Car-free cities,190,0.7795493674676248
+RND_s101,Cell phones at school,152,0.7241272783441458
+RND_s101,Community service,142,0.6275195582144502
+RND_s101,Distance learning,288,0.8430554106229782
+RND_s101,Does the electoral college work?,356,0.7684307278962067
+RND_s101,Driverless cars,295,0.6902826923824708
+RND_s101,Exploring Venus,196,0.8086560364464692
+RND_s101,Facial action coding system,220,0.7710577864838394
+RND_s101,Grades for extracurricular activities,175,0.7295331605982089
+RND_s101,Mandatory extracurricular activities,177,0.7950338857565921
+RND_s101,Phones and driving,138,0.7714459541675116
+RND_s101,Seeking multiple opinions,331,0.7591503909633753
+RND_s101,Summer projects,172,0.6525890561880279
+RND_s101,The Face on Mars,160,0.7578425976884975
+RB_s101,"""A Cowboy Who Rode the Waves""",127,0.7469012783745685
+RB_s101,Car-free cities,190,0.7812001721039711
+RB_s101,Cell phones at school,152,0.7221206581352835
+RB_s101,Community service,142,0.6192856493683541
+RB_s101,Distance learning,288,0.8476987447698745
+RB_s101,Does the electoral college work?,356,0.770608864663878
+RB_s101,Driverless cars,295,0.6929334207178379
+RB_s101,Exploring Venus,196,0.8160409556313993
+RB_s101,Facial action coding system,220,0.7868625011960578
+RB_s101,Grades for extracurricular activities,175,0.7687733979299713
+RB_s101,Mandatory extracurricular activities,177,0.7920172845121674
+RB_s101,Phones and driving,138,0.7458563535911602
+RB_s101,Seeking multiple opinions,331,0.7398226143269433
+RB_s101,Summer projects,172,0.6702574402044915
+RB_s101,The Face on Mars,160,0.7596204533473906
+TS_s101,"""A Cowboy Who Rode the Waves""",127,0.7657963699893235
+TS_s101,Car-free cities,190,0.7887555274794693
+TS_s101,Cell phones at school,152,0.75046904315197
+TS_s101,Community service,142,0.6323248841646225
+TS_s101,Distance learning,288,0.8504515858013022
+TS_s101,Does the electoral college work?,356,0.7764834416413633
+TS_s101,Driverless cars,295,0.690839548670874
+TS_s101,Exploring Venus,196,0.8200822481151473
+TS_s101,Facial action coding system,220,0.7808028426005954
+TS_s101,Grades for extracurricular activities,175,0.7584349754474893
+TS_s101,Mandatory extracurricular activities,177,0.798060467769538
+TS_s101,Phones and driving,138,0.7388966341366261
+TS_s101,Seeking multiple opinions,331,0.7417354523428197
+TS_s101,Summer projects,172,0.6610184849583182
+TS_s101,The Face on Mars,160,0.7713801862828111

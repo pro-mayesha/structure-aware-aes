@@ -1,0 +1,27 @@
+# Step 3 stress tests for PERSUADE 2.0 structural-validity study.
+# Reuses feasibility split, models, and metrics. Does not touch official test set.
+
+seed: 42
+shuffle_seeds: [13, 21, 42, 87, 101]
+bootstrap_samples: 2000
+ts_reference_seed: 42  # canonical shuffled-order condition for LOO
+
+paths:
+  essays: data/persuade20/processed/essays.csv
+  join_validation: outputs/persuade20_audit/join_validation.csv
+  raw_train: data/persuade20/raw/persuade_corpus_2.0_train.csv
+  split_output: data/persuade20/processed/feasibility_split.csv
+  feasibility_config: configs/structure_feasibility.yaml
+  output_dir: outputs/structure_stress_tests
+
+tfidf:
+  ngram_range: [1, 2]
+  max_features: 30000
+  min_df: 3
+
+ridge_alphas: [1.0, 10.0, 100.0]
+ridge_cv_folds: 5
+loo_ridge_cv_folds: 3  # used only when loo_fixed_alpha is null
+loo_fixed_alpha: 10.0  # match modal alpha from feasibility/stress T-series; speeds LOO
+
+score_range: [1, 6]

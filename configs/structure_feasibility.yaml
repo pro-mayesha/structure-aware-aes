@@ -1,0 +1,60 @@
+# Feasibility screening experiment for PERSUADE 2.0 structural-validity study.
+# Uses official-train essays only; official test set is never touched.
+
+seed: 42
+train_fraction: 0.8
+shuffle_seeds: [13, 21, 42, 87, 101]
+bootstrap_samples: 2000
+
+paths:
+  essays: data/persuade20/processed/essays.csv
+  join_validation: outputs/persuade20_audit/join_validation.csv
+  raw_train: data/persuade20/raw/persuade_corpus_2.0_train.csv
+  split_output: data/persuade20/processed/feasibility_split.csv
+  output_dir: outputs/structure_feasibility
+
+discourse_types:
+  - Lead
+  - Position
+  - Claim
+  - Counterclaim
+  - Rebuttal
+  - Evidence
+  - Concluding Statement
+
+# Leakage-sensitive columns that must never enter features.
+forbidden_columns:
+  - discourse_effectiveness
+  - gender
+  - grade_level
+  - ell_status
+  - race_ethnicity
+  - economically_disadvantaged
+  - student_disability_status
+  - prompt_name
+  - assignment
+  - competition_set
+  - task
+  - provider
+  - source_text
+  - essay_id_comp
+
+tfidf:
+  ngram_range: [1, 2]
+  max_features: 30000
+  min_df: 3
+
+ridge_alphas: [1.0, 10.0, 100.0]
+ridge_cv_folds: 5
+
+hist_gradient_boosting:
+  max_iter: 300
+  learning_rate: 0.05
+  max_depth: 6
+  random_state: 42
+
+decision:
+  green_qwk_threshold: 0.005
+  green_prompt_fraction: 0.6
+
+score_range: [1, 6]

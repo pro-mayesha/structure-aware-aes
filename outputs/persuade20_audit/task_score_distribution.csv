@@ -1,0 +1,13 @@
+task,holistic_essay_score,essay_count
+Independent,1.0,82
+Independent,2.0,1986
+Independent,3.0,3759
+Independent,4.0,4102
+Independent,5.0,2458
+Independent,6.0,732
+Text dependent,1.0,946
+Text dependent,2.0,3713
+Text dependent,3.0,4609
+Text dependent,4.0,2627
+Text dependent,5.0,839
+Text dependent,6.0,141

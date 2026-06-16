@@ -1,0 +1,59 @@
+# Step 4: Final held-out evaluation on official PERSUADE 2.0 test split.
+# First and only use of official-test essays for model evaluation.
+
+seed: 42
+shuffle_seeds: [13, 21, 42, 87, 101]
+bootstrap_seeds: [13, 21, 42, 87, 101]
+bootstrap_samples: 10000
+ts_reference_seed: 42
+
+paths:
+  essays: data/persuade20/processed/essays.csv
+  join_validation: outputs/persuade20_audit/join_validation.csv
+  raw_train: data/persuade20/raw/persuade_corpus_2.0_train.csv
+  raw_test: data/persuade20/raw/persuade_corpus_2.0_test.csv
+  split_output: data/persuade20/processed/feasibility_split.csv
+  feasibility_config: configs/structure_feasibility.yaml
+  verification_manifest: outputs/structure_verification/feature_family_manifest.csv
+  output_dir: outputs/final_heldout_evaluation
+
+tfidf:
+  ngram_range: [1, 2]
+  max_features: 30000
+  min_df: 3
+
+ridge_alphas: [1.0, 10.0, 100.0]
+ridge_cv_folds: 5
+
+# Alpha chosen on official-train internal validation before any test use.
+# Prior experiments consistently selected 10.0; re-selected here on train only.
+alpha_selection_condition: T2
+
+primary_conditions:
+  - T0
+  - T1
+  - T2
+  - T3
+  - POS
+  - POS_TRANS
+  - T3_PLUS_POS
+
+random_control_bases:
+  - TS
+  - RB
+  - RND
+
+primary_comparisons:
+  - [T3_PLUS_POS, T2]
+  - [T3_PLUS_POS, T3]
+  - [T3_PLUS_POS, POS]
+  - [T3_PLUS_POS, POS_TRANS]
+  - [T3_PLUS_POS, mean_TS]
+  - [T3_PLUS_POS, mean_RB]
+  - [T3_PLUS_POS, mean_RND]
+  - [T3, T2]
+  - [POS, T2]
+  - [POS_TRANS, T2]
+
+claim_threshold_qwk: 0.003
+claim_prompt_fraction: 0.6

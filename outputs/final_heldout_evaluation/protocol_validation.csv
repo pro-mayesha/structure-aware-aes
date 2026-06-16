@@ -1,0 +1,13 @@
+check,passed,detail
+official_test_first_use,True,No prior experiment script evaluates official-test essays
+no_train_test_overlap,True,"train=15591, test=10401"
+two_invalid_essays_excluded,True,join_valid=False essays excluded via join_validation.csv
+preprocessing_fit_train_only,True,TF-IDF and StandardScaler fit on official-train only
+identical_test_essays_all_conditions,True,All conditions evaluated on same 10401 essays in identical order
+ridge_alpha_from_train_validation,True,alpha=10.0 selected on train internal validation (T2)
+frozen_tfidf_settings,True,"{'ngram_range': [1, 2], 'max_features': 30000, 'min_df': 3}"
+bootstrap_samples_ge_10000,True,10000
+feature_manifest_match_all_conditions,True,"{'T0': True, 'T1': True, 'T2': True, 'T3': True, 'POS': True, 'POS_TRANS': True, 'T3_PLUS_POS': True, 'TS': True, 'RB': True, 'RND': True}"
+random_controls_validated,True,TS/RB/RND seeds preserve control properties per Step 3.5
+no_post_test_protocol_changes,True,Feature definitions and hyperparameters frozen before test evaluation
+random_control_property_checks,True,n_checks=400

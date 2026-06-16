@@ -1,0 +1,85 @@
+# Step 5: Transformer robustness evaluation (secondary analysis).
+# Primary controlled study remains TF-IDF + Ridge (Steps 1-4).
+
+seed: 42
+run_seeds: [13, 42, 101]
+fallback_single_seed: 42
+shuffle_seeds: [13, 21, 42, 87, 101]
+shuffle_seed: 42
+rnd_seed: 42
+bootstrap_samples: 10000
+
+paths:
+  essays: data/persuade20/processed/essays.csv
+  join_validation: outputs/persuade20_audit/join_validation.csv
+  raw_train: data/persuade20/raw/persuade_corpus_2.0_train.csv
+  raw_test: data/persuade20/raw/persuade_corpus_2.0_test.csv
+  split_output: data/persuade20/processed/feasibility_split.csv
+  feasibility_config: configs/structure_feasibility.yaml
+  verification_manifest: outputs/structure_verification/feature_family_manifest.csv
+  ridge_test_results: outputs/final_heldout_evaluation/final_results.csv
+  output_dir: outputs/transformer_robustness
+
+transformer:
+  model_name: microsoft/deberta-v3-base
+  max_length: 512
+  head_tokens: 256
+  tail_tokens: 256
+  numeric_proj_dim: 64
+  dropout: 0.1
+
+training:
+  max_epochs: 5
+  early_stopping_patience: 2
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  batch_size: 16
+  max_batch_size: 16
+  gradient_accumulation_steps: 1
+  max_grad_norm: 1.0
+  mixed_precision: true
+  num_workers: 0
+  warmup_ratio: 0.1
+
+compute:
+  require_cuda: false
+  allow_mps: true
+  allow_cpu: false
+  non_cuda_training_mode: frozen_encoder_head
+  min_cuda_memory_gb: 12
+  estimated_minutes_per_run_mps: 25
+  estimated_minutes_per_run_cuda: 12
+
+conditions:
+  D0:
+    build: null
+    description: Transformer essay text only
+  D2:
+    build: T2
+    description: Text + surface + counts
+  D_STRUCT:
+    build: T3_PLUS_POS
+    description: Text + surface + counts + complete T3_PLUS_POS structure
+  D_POS:
+    build: POS
+    description: Text + surface + counts + label-free boundary geometry
+  D_SHUFFLED:
+    build: TS
+    shuffle_seed: 42
+    description: Text + surface + counts + shuffled rhetorical labels (true boundaries)
+  D_RANDOM:
+    build: RND
+    rnd_seed: 42
+    description: Text + surface + counts + capacity-matched random features
+
+primary_comparisons:
+  - [D_STRUCT, D0]
+  - [D_STRUCT, D2]
+  - [D_STRUCT, D_POS]
+  - [D_STRUCT, D_SHUFFLED]
+  - [D_STRUCT, D_RANDOM]
+  - [D_POS, D2]
+  - [D_SHUFFLED, D2]
+
+decision_threshold_qwk: 0.003
+decision_prompt_fraction: 0.6
