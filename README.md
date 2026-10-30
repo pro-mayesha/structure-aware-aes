@@ -1,6 +1,6 @@
 # Structure-aware AES: Controlled Document-Structure Features for Essay Scoring
 
-This repository supports a **controlled validity study** showing that discourse-derived document structure—especially **boundary geometry** and **rhetorical transitions**—adds predictive signal for holistic essay scoring **beyond** essay text, surface features, and component counts on **PERSUADE 2.0**.
+This repository supports a **controlled validity study** of whether information about argumentative organization (where annotated argumentative components sit, and which rhetorical labels they carry) adds predictive signal for holistic essay scoring **beyond** essay text, surface features, and component counts on **PERSUADE 2.0**. In feature-matched post hoc controls, true placement and true labels each add a small, similar increment; about half of the apparent gain from boundary geometry also appears when component positions are permuted.
 
 ## Important framing
 
@@ -20,10 +20,27 @@ This repository supports a **controlled validity study** showing that discourse-
 
 - **ΔQWK (T3_PLUS_POS − T2):** +0.0128; bootstrap 95% CI [+0.0092, +0.0162]; P(Δ > 0) = 1.000  
 - **Prompt consistency:** T3_PLUS_POS beats T2 on **15/15** prompts  
-- **Falsification:** Genuine structure beats **shuffled labels**, **random boundaries**, and **capacity-matched random features** on test  
+- **Feature-matched controls (post hoc):** each structural representation beats its controls (shuffled labels, random boundaries, permuted segments, random features), matched in feature count, over 20 deterministic seeds. See [`outputs/posthoc_controls/posthoc_report.md`](outputs/posthoc_controls/posthoc_report.md). These supersede the original T3-level controls in `final_report.md`, whose draws used Python's salted `hash()` and could not be reproduced.  
 
 Full tables: [`outputs/final_heldout_evaluation/final_report.md`](outputs/final_heldout_evaluation/final_report.md)  
 Paper mapping: [`PAPER_OUTPUT_MAP.md`](PAPER_OUTPUT_MAP.md)
+
+### Condition names: paper vs. code
+
+| Paper | Code |
+|-------|------|
+| Text | T0 |
+| Text + surface | T1 |
+| Organization-blind baseline | T2 |
+| Labeled structure | T3 |
+| Geometry | POS |
+| Geometry + transitions | POS_TRANS |
+| Full structure | T3_PLUS_POS |
+| Shuffled labels / random boundaries / random features (labeled-structure level) | TS / RB / RND |
+| Random boundaries / permuted segments / random features (geometry level) | POS_RB / POS_PERM / POS_RND |
+| Shuffled labels / random boundaries / permuted segments / random features (full level) | FULL_TS / FULL_RB / FULL_PERM / FULL_RND |
+
+Reproduce the post hoc controls with `make reproduce-posthoc`.
 
 ## Repository structure
 

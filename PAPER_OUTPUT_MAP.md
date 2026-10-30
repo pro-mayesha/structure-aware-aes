@@ -30,7 +30,24 @@ Maps paper claims and tables to **exact repository files**. All paths are relati
 | T3_PLUS_POS vs T2, T3, POS, POS_TRANS | `outputs/final_heldout_evaluation/primary_comparisons.csv` |
 | Full bootstrap detail | `outputs/final_heldout_evaluation/bootstrap_comparisons.csv` |
 
-## Falsification controls (official test)
+## Feature-matched controls (paper Table 6, Figure 1; post hoc)
+
+Produced by `scripts/run_posthoc_controls.py` (`make reproduce-posthoc`): 20 seeds, deterministic md5-based seeding, controls matched in feature count at three levels (T3 = 115, POS = 86, T3_PLUS_POS = 177 numeric features).
+
+| Paper element | Repository file |
+|---------------|-----------------|
+| Table 6 (all ten control comparisons) | `outputs/posthoc_controls/posthoc_results.csv` |
+| Control mean / SD / min / max QWK across seeds | `outputs/posthoc_controls/control_seed_summary.csv` |
+| Per-essay predictions, all conditions and seeds | `outputs/posthoc_controls/predictions/*.csv.gz` |
+| Reproduction check of T2, T3, POS, T3_PLUS_POS | `outputs/posthoc_controls/step0_reproduction.csv` |
+| Determinism check (two hash seeds, identical QWKs) | `outputs/posthoc_controls/determinism_check.csv` |
+| Narrative report | `outputs/posthoc_controls/posthoc_report.md` |
+
+Figure 1 steps: POS_PERM − T2, POS − POS_PERM, FULL_TS − POS, T3_PLUS_POS − FULL_TS (computed from the prediction files).
+
+## Original falsification controls (superseded)
+
+The controls below are T3-level only and were seeded with Python's per-process string `hash()`, so their exact draws cannot be reproduced. They are kept for the record and are not used in the paper. The main pipeline now uses deterministic seeding, so rerunning it gives stable (but different) draws.
 
 | Control | Seeds | Repository file |
 |---------|-------|-----------------|
@@ -56,7 +73,7 @@ Development-phase control validation: `outputs/structure_verification/control_va
 |-------|-----------------|--------------|
 | **15,591** official-train essays (join-valid) | `outputs/final_heldout_evaluation/final_results.csv` | `n_train` column |
 | **10,401** official-test essays (join-valid) | same | `n_test` column |
-| **2** excluded join-invalid essays | `outputs/persuade20_audit/join_validation.csv` | `join_valid=False` (2 rows) |
+| **4** excluded essays (3 train, 1 test) | `outputs/persuade20_audit/join_validation.csv` | `join_valid=False` (2 rows, each an identifier shared by two different essays because `essay_id` is stored in rounded scientific notation) |
 | **99.99%** join-valid rate | `outputs/persuade20_audit/persuade20_audit_summary.md` | Section 2 |
 | Exclusion reasons | `outputs/persuade20_audit/join_validation.csv` | `exclusion_reason` column |
 

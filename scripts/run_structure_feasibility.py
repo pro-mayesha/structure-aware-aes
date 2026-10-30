@@ -8,6 +8,7 @@ Uses join-valid official-train essays only. Never touches the official test set.
 
 from __future__ import annotations
 
+import hashlib
 import argparse
 import json
 import re
@@ -27,6 +28,11 @@ from sklearn.linear_model import Ridge
 from sklearn.metrics import cohen_kappa_score, mean_absolute_error, mean_squared_error
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.preprocessing import StandardScaler
+
+
+def _stable_hash(value: object) -> int:
+    """Process-independent 32-bit hash (Python's built-in hash() of str is salted per process)."""
+    return int(hashlib.md5(str(value).encode()).hexdigest()[:8], 16)
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
@@ -164,7 +170,7 @@ def get_or_create_split(essays: pd.DataFrame, cfg: dict) -> pd.DataFrame:
 
 
 def shuffle_labels(structure: EssayStructure, seed: int, essay_id: str) -> list[str]:
-    rng = np.random.default_rng(seed ^ (hash(essay_id) & 0xFFFFFFFF))
+    rng = np.random.default_rng(seed ^ _stable_hash(essay_id))
     labels = list(structure.labels)
     if len(labels) <= 1:
         return labels

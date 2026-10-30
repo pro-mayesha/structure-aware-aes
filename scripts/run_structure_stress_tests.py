@@ -8,6 +8,7 @@ text, surface features, and discourse counts.
 
 from __future__ import annotations
 
+import hashlib
 import argparse
 import sys
 from itertools import product
@@ -26,6 +27,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 
 from run_structure_feasibility import (  # noqa: E402
+
     RHETORICAL_TYPES,
     EssayStructure,
     build_essay_structures,
@@ -49,6 +51,12 @@ from run_structure_feasibility import (  # noqa: E402
     shuffle_labels,
     surface_feature_dict,
 )
+
+
+def _stable_hash(value: object) -> int:
+    """Process-independent 32-bit hash (Python's built-in hash() of str is salted per process)."""
+    return int(hashlib.md5(str(value).encode()).hexdigest()[:8], 16)
+
 
 # ---------------------------------------------------------------------------
 # Extended structures for label-free position features
@@ -189,7 +197,7 @@ def rb_structure(
     structure: EssayStructure,
     seed: int,
 ) -> tuple[list[str], list[int], list[int]]:
-    rng = np.random.default_rng(seed ^ (hash(structure.essay_id) & 0xFFFFFFFF))
+    rng = np.random.default_rng(seed ^ _stable_hash(structure.essay_id))
     n = len(structure.labels)
     if n == 0:
         return [], [], []
@@ -244,7 +252,7 @@ def random_control_features(
     seed: int,
     split_tag: str,
 ) -> dict[str, np.ndarray]:
-    rng = np.random.default_rng(seed ^ hash(split_tag) & 0xFFFFFFFF)
+    rng = np.random.default_rng(seed ^ _stable_hash(split_tag))
     return {eid: rng.normal(size=n_dims) for eid in essay_ids}
 
 
@@ -356,7 +364,7 @@ def random_boundary_true_sequence(
     seed: int,
 ) -> tuple[list[str], list[int], list[int]]:
     """Random boundaries; preserve original label sequence order."""
-    rng = np.random.default_rng(seed ^ (hash(structure.essay_id) & 0xFFFFFFFF))
+    rng = np.random.default_rng(seed ^ _stable_hash(structure.essay_id))
     labels = list(structure.labels)
     starts, ends = random_boundaries(structure.char_count, len(labels), rng)
     return labels, starts, ends
